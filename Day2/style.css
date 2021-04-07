@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?familt=muli&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/* mine */
 :root {
     --line-border-fill: #3498db;
     --line-border-empty: #e0e0e0;
@@ -35,7 +35,7 @@ body {
 
 .progress-container::before {
     content: '';
-    background-color: #var(var(--line-border-empty));
+    background-color: var(--line-border-empty);
     position: absolute;
     top: 50%;
     left: 0;
@@ -46,7 +46,7 @@ body {
 }
 
 .progress {
-    background-color: #var(var(--line-border-fill));
+    background-color: var(--line-border-fill);
     position: absolute;
     top: 50%;
     left: 0;
@@ -54,7 +54,7 @@ body {
     height: 4px;
     width: 0%;
     z-index: -1;
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 .circle {
@@ -67,7 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 3px solid var(--line-border-empty);
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 .circle.active {
