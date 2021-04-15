@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,900&display=swap");
 
+
 * {
   box-sizing: border-box;
   font-family: Roboto;
@@ -11,39 +12,50 @@
 
 body {
   background-image: url(./media/webb-dark.png);
-
 }
 
 .page-name {
+  background-image: url(./media/webb-dark.png);
   font-size: 10vh;
   text-align: center;
+  color: aliceblue;
+  border-bottom: 1px solid aliceblue;
+  position: sticky;
+  padding-bottom: 20px;
+}
+
+.modal {
+  color: red;
+  border: 10px solid red;
+  height: 100vh;
+  width: 100vh;
+  background-color: black;
+  opacity: 0.8;
 }
 
 /* GALLERY MAIN */
 .gallery {
   display: grid;
   /* padding: 1rem; */
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 2px;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-gap: 12px;
 }
 /* GALLERY MAIN */
 
 /* START: INDIVIDUAL TILES IN GALLERY */
 .tile {
-  border: 1px solid blue;
+  border: 1px solid aliceblue;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
 #label {
-  border: 1px solid red;
-  background-color: white;
+  /* border: 1px solid red; */
+  background-color: aliceblue;
   color: black;
   text-decoration: none;
   transition: 0.3s;
-  position: sticky;
-  bottom: -10;
 }
 
 #label:hover {
@@ -59,15 +71,13 @@ body {
 
 
 
+
 /* START: MEDIA QUERIES */
 @media (max-width: 960px) {
   .page-name {
     color: red;
   }
 
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
 }
 
@@ -77,9 +87,6 @@ body {
     color: green;
   }
 
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
 }
 
@@ -87,18 +94,15 @@ body {
 @media (max-width: 500px) {
   .page-name {
     color: yellow;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(1fr);
+    font-size: 5vh;
   }
 
 }
 
-/*
+
 @media (max-width: 480px) {
   .page-name {
     color: blue;
   }
-} */
+}
 /* END: MEDIA QUERIES */
