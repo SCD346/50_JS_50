@@ -38,7 +38,8 @@ body {
   display: grid;
   /* padding: 1rem; */
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  grid-gap: 12px;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-gap: 2px;
 }
 /* GALLERY MAIN */
 
@@ -78,6 +79,9 @@ body {
     color: red;
   }
 
+  /* .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  } */
 
 }
 
@@ -86,7 +90,9 @@ body {
   .page-name {
     color: green;
   }
-
+  /* .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  } */
 
 }
 
@@ -97,6 +103,10 @@ body {
     font-size: 5vh;
   }
 
+  /* .gallery {
+    grid-template-columns: repeat(1fr);
+  } */
+
 }
 
 
@@ -104,5 +114,10 @@ body {
   .page-name {
     color: blue;
   }
+
+  /* .gallery {
+    grid-template-columns: repeat(1fr);
+  } */
+
 }
 /* END: MEDIA QUERIES */
