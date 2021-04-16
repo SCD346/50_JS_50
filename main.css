@@ -73,17 +73,27 @@ body {
   .gallery {
     grid-template-columns: 33.3% 33.3% 33.3%;
   }
+  .page-name {
+    font-size: 8vh;
+  }
 }
 
 @media (max-width: 700px) {
   .gallery {
     grid-template-columns: 50% 50%;
   }
+  .page-name {
+    font-size: 7vh;
+  }
 }
 
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: 100%;
+  }
+
+  .page-name {
+    font-size: 4vh;
   }
 }
 /* END: MEDIA QUERIES */
