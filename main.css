@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,900&display=swap");
 
-
 * {
   box-sizing: border-box;
   font-family: Roboto;
@@ -22,6 +21,7 @@ body {
   border-bottom: 1px solid aliceblue;
   position: sticky;
   padding-bottom: 20px;
+  top: -1;
 }
 
 .modal {
@@ -36,9 +36,7 @@ body {
 /* GALLERY MAIN */
 .gallery {
   display: grid;
-  /* padding: 1rem; */
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-gap: 2px;
 }
 /* GALLERY MAIN */
@@ -52,7 +50,6 @@ body {
 }
 
 #label {
-  /* border: 1px solid red; */
   background-color: aliceblue;
   color: black;
   text-decoration: none;
@@ -63,61 +60,30 @@ body {
   background-color: black;
   color: aliceblue;
 }
-/* END: NDIVIDUAL TILES IN GALLERY */
-
-
-
-
-
-
-
-
+/* END: INDIVIDUAL TILES IN GALLERY */
 
 /* START: MEDIA QUERIES */
-@media (max-width: 960px) {
-  .page-name {
-    color: red;
+@media (max-width: 1160px) {
+  .gallery {
+    grid-template-columns: 25% 25% 25% 25%;
   }
-
-  /* .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  } */
-
 }
 
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+}
 
 @media (max-width: 700px) {
-  .page-name {
-    color: green;
+  .gallery {
+    grid-template-columns: 50% 50%;
   }
-  /* .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  } */
-
 }
-
-
-@media (max-width: 500px) {
-  .page-name {
-    color: yellow;
-    font-size: 5vh;
-  }
-
-  /* .gallery {
-    grid-template-columns: repeat(1fr);
-  } */
-
-}
-
 
 @media (max-width: 480px) {
-  .page-name {
-    color: blue;
+  .gallery {
+    grid-template-columns: 100%;
   }
-
-  /* .gallery {
-    grid-template-columns: repeat(1fr);
-  } */
-
 }
 /* END: MEDIA QUERIES */
