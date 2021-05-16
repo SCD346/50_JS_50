@@ -19,24 +19,20 @@ function createUserCard(user) {
     const cardHTML = `
     <div class="card">
             <div>
-                <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="" class="avatar">
+                <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
             </div>
 
             <div class="user-info">
-                <h2>John Doe</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui?</p>
+                <h2>${user.name}</h2>
+                <p>${user.bio}</p>
 
                 <ul>
-                    <li>300 <strong>Followers</strong></li>
-                    <li>400 <strong>Following</strong></li>
-                    <li>30 <strong>Repos</strong></li>
+                    <li>${user.followers} <strong>Followers</strong></li>
+                    <li>${user.following} <strong>Following</strong></li>
+                    <li>${user.public_repos} <strong>Repos</strong></li>
 
 
-                    <div id="repos">
-                        <a href="#" class="repo">Repo 1</a>
-                        <a href="#" class="repo">Repo 2</a>
-                        <a href="#" class="repo">Repo 3</a>
-                    </div>
+                    <div id="repos"></div>
 
                 </ul>
             </div>
