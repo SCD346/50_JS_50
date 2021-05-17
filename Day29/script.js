@@ -2,6 +2,7 @@ const loveMe = document.querySelector('.loveMe')
 const times = document.querySelector('#times')
 
 let clickTime = 0
+let timesClicked = 0
 
 //create a custom double click event instead of using dblclick in eventlistener
 loveMe.addEventListener('click', (e) => {
@@ -35,4 +36,8 @@ const createHeart = (e) => {
     heart.style.left = `${xInside}px`
 
     loveMe.appendChild(heart)
+
+    times.innerHTML = ++timesClicked
+
+    setTimeout(() => heart.remove(), 1000)
 }
