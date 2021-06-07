@@ -24,10 +24,19 @@ const fetchPokemons = async () => {
 }
 
 const getPokemon = async (id) => {
-    const url = `https://pokeapi.com/api/v2/pokemon/${id}`
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`
     const res = await fetch(url)
     const data = await res.json()
-    console.log(data)
+    createPokemonCard(data)
+}
+
+const createPokemonCard = (pokemon) => {
+    const pokemonEl = document.createElement('div')
+    pokemonEl.classList.add('pokemon')
+
+    const pokemonInnerHTML = `
+
+    `
 }
 
 fetchPokemons()
