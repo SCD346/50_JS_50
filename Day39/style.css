@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,3 +13,15 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+.background {
+    background: url('https://images.unsplash.com/photo-1504203700686-f21e703e5f1c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1361&q=80') no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
+
