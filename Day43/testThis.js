@@ -1,4 +1,3 @@
-// MINE
 const ratings = document.querySelectorAll('.rating')
 const ratingsContainer = document.querySelector('.ratings-container')
 const sendBtn = document.querySelector('#send')
@@ -7,7 +6,7 @@ let selectedRating = 'Satisfied'
 
 ratingsContainer.addEventListener('click', (e) => {
     if(e.target.parentNode.classList.contains('rating')) {
-       removeActive()
+        removeActive()
         e.target.parentNode.classList.add('active')
         selectedRating = e.target.nextElementSibling.innerHTML
     }
@@ -23,17 +22,8 @@ sendBtn.addEventListener('click', (e) => {
     `
 })
 
-
-// Using a ForLoop
 function removeActive() {
     for(let i = 0; i < ratings.length; i++) {
         ratings[i].classList.remove('active')
     }
 }
-
-// Using a ForEach
-// function removeActive() {
-//    ratings.forEach(rating => {
-//     rating.classList.remove('active')
-//    });
-// }
