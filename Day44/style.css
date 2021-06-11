@@ -88,3 +88,24 @@ input[type='range']::-moz-range-thumb {
     margin-top: -7px;
     cursor: pointer;
 }
+
+/* Internet Explorer */
+input[type='range']::-ms-track {
+    background: purple;
+    border-radius: 4px;
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+}
+
+
+input[type='range']::-ms-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid purple;
+    margin-top: -7px;
+    cursor: pointer;
+}
