@@ -17,15 +17,15 @@ body {
     text-transform: uppercase;
 }
 
-.nav-btn {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 .logo {
     width: 150px;
+}
+
+.nav-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .open-btn {
@@ -82,6 +82,7 @@ body {
 }
 
 .close-btn {
+    opacity: 0.3;
     position: absolute;
     top: 40px;
     right: 30px;
@@ -107,4 +108,3 @@ body {
     list-style-type: none;
     padding-left: 20px;
 }
-
