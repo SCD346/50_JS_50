@@ -61,7 +61,7 @@ const testimonials = [
 let idx = 1
 
 function updateTestimonial() {
-    const { name, postition, photo, text } = testimonials[idx]
+    const { name, position, photo, text } = testimonials[idx]
 
     testimonial.innerHTML = text
     userImage.src = photo
