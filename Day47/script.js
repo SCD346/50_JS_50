@@ -1,7 +1,7 @@
 const testimonialsContainer = document.querySelector('.testimonials-container')
 const testimonial = document.querySelector('.testimonial')
 const userImage = document.querySelector('.user-image')
-const userName = document.querySelector('.user-name')
+const userName = document.querySelector('.username')
 const role = document.querySelector('.role')
 
 const testimonials = [
@@ -58,3 +58,22 @@ const testimonials = [
     },
   ]
 
+let idx = 1
+
+function updateTestimonial() {
+    const { name, postition, photo, text } = testimonials[idx]
+
+    testimonial.innerHTML = text
+    userImage.src = photo
+    userName.innerHTML = name
+    role.innerHTML = postition
+
+    idx++
+
+    if(idx > testimonials.length - 1) {
+        idx = 0
+
+    }
+}
+
+setInterval(updateTestimonial, 10000)
