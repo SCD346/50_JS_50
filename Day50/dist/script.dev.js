@@ -68,5 +68,27 @@ function getRandomLocation() {
 }
 
 function catchInsect() {
-  console.log('123');
+  var _this = this;
+
+  increaseScore();
+  this.classList.add('caught');
+  setTimeout(function () {
+    return _this.remove();
+  }, 2000);
+  addInsects();
+}
+
+function addInsects() {
+  setTimeout(createInsect, 1000);
+  setTimeout(createInsect, 1500);
+}
+
+function increaseScore() {
+  score++;
+
+  if (score > 19) {
+    message.classList.add('visible');
+  }
+
+  scoreEl.innerHTML = "Score: ".concat(score);
 }
