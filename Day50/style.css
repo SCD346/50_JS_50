@@ -49,7 +49,7 @@ h1 {
 }
 
 .screen.up {
-    margin-top: -100vh;
+    margin-top: -200vh;
 }
 
 .insects-list {
@@ -57,7 +57,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
+    padding: 0;s
 }
 
 .insects-list li {
@@ -72,6 +72,15 @@ h1 {
     font-family: inherit;
     width: 150px;
     height: 150px;
+}
+
+.choose-insect-btn:hover {
+    background-color: #fff;
+    color: #516dff;
+}
+
+.choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .choose-insect-btn img {
